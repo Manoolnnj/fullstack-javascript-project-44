@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manoolnnj/fullstack-javascript-project-44.git"
+  },
+  "keywords": [
+    "first",
+    "project"
+  ],
+  "author": "manoolnnj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manoolnnj/fullstack-javascript-project-44/issues"
+  },
+  "homepage": "https://github.com/Manoolnnj/fullstack-javascript-project-44#readme"
+}
