@@ -7,4 +7,7 @@ brain-games: # probably start of the program
 publish: #execute выполнит npm publish --dry-run
 	npm publish --dry-run
 
+lint: #test linter
+	npx eslint
+
 .PHONY: test	
