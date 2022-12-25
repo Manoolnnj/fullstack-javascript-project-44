@@ -2,7 +2,8 @@
   "name": "@hexlet/code",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "version": "1.0.0",
   "description": "npm package",
@@ -28,5 +29,8 @@
     "eslint": "^8.30.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "brew": "^0.0.8"
   }
 }
