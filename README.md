@@ -3,3 +3,4 @@
 <a href="https://codeclimate.com/github/Manoolnnj/fullstack-javascript-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d138c0c3e7da475cf859/maintainability" /></a>
 https://asciinema.org/a/Zl95yjkOH6Fl70rsvKg1Ls6M3
 https://asciinema.org/a/U72NtSTO30LfGzFRGXpml7LPS
+https://asciinema.org/a/dYIdLtaLpKLW9sUnNqvaVX70q
