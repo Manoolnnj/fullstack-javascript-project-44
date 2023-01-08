@@ -15,6 +15,9 @@ brain-gcd: # start of the gcd game
 
 brain-progression: # start of the progression game
 	node games/brain-progression.js
+
+brain-prime: # start of the prime game
+	node games/brain-prime.js
 	
 publish: #execute npm publish --dry-run
 	npm publish --dry-run
