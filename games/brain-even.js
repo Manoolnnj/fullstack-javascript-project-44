@@ -1,5 +1,12 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+
+import { randomInteger } from '../src/index.js';
+import { readlineSync } from 'readline-sync';
+import { greetings } from '../src/cli.js';
+import { question } from '../src/cli.js';
+
+greetings();
+const name = question();
 
 const isEven = (number) => {
     if (number % 2 === 0) {
@@ -9,16 +16,11 @@ const isEven = (number) => {
     }
 };
 
-const providingRandomNumber = () => {
-    return Math.ceil(Math.random() * 100);
-};
-
-import { name } from '../src/cli.js';
-const evenGame = () => {
+export const evenGame = () => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     for (let i = 0; i < 3; i += 1) {
-        const number = providingRandomNumber();
+        const number = randomInteger(0, 50);
         console.log('Question: ' + number)
         const userAnswer = readlineSync.question('Your answer ');
 
@@ -41,8 +43,6 @@ const evenGame = () => {
     }
     console.log(`Congratulations, ${name}!`)
 };
-
-export { evenGame };
 
 evenGame();
 

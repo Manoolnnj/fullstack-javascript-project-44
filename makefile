@@ -4,10 +4,19 @@ install: # installing  node package manager
 brain-games: # probably start of the program
 	node bin/brain-games.js
 
-brain-even: # probably start of the program
-	node bin/brain-even.js
+brain-even: # start of the isEven game
+	node games/brain-even.js
+
+brain-calc: # start of the calculator game
+	node games/brain-calc.js
+
+brain-gcd: # start of the gcd game
+	node games/brain-gcd.js 
+
+brain-progression: # start of the progression game
+	node games/brain-progression.js
 	
-publish: #execute выполнит npm publish --dry-run
+publish: #execute npm publish --dry-run
 	npm publish --dry-run
 
 lint: #test linter

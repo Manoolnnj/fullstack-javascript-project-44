@@ -3,7 +3,10 @@
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "games/brain-even.js",
+    "brain-calc": "games/brain-calc.js",
+    "brain-gcd": "games/brain-gcd.js",
+    "brain-progression": "games/brain-progression.js"
   },
   "version": "1.0.0",
   "description": "npm package",
