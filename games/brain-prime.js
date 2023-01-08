@@ -5,7 +5,7 @@ import readlineSync from 'readline-sync';
 import { greetings } from '../src/cli.js';
 import { question } from '../src/cli.js';
 import { isPrime } from '../src/index.js';
-
+import { answerChecking } from '../src/index.js';
 
 greetings();
 const name = question();
@@ -17,9 +17,6 @@ const brainPrime = () => {
         const number = randomInteger(1, 100);
         console.log(`Question: ${number}`);
         const userAnswer = readlineSync.question('Your answer: ');
-
-
-        const check1 = isPrime(number) && userAnswer === 'yes'
 
         if ((isPrime(number)) && (userAnswer === 'yes')) {
             console.log('Correct!');
