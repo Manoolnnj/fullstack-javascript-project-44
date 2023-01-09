@@ -27,7 +27,7 @@ const gcd = () => {
             return;
         }
     }
-    console.log(`Conratulations, ${name}!`)
+    console.log(`Congratulations, ${name}!`)
 }
 
 gcd();
