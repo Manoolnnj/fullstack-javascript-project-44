@@ -12,7 +12,7 @@ const progression = () => {
     console.log('What number is missing in the progression ?')
 
     for (let i = 0; i < 3; i += 1) {
-        const initialTerm = randomInteger(0, 20);
+        const initialTerm = randomInteger(1, 20);
         const commonDifference = randomInteger(1, 7);
         const arr = [initialTerm];
         let lastNumber = initialTerm;
