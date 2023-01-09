@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
 import { randomInteger } from '../src/index.js';
-import readlineSync from 'readline-sync';
+import { readlineSync } from 'readline-sync';
 import { greetings } from '../src/cli.js';
 import { question } from '../src/cli.js';
 import { isPrime } from '../src/index.js';
-import { answerChecking } from '../src/index.js';
 
 greetings();
 const name = question();

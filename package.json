@@ -35,6 +35,7 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "dependencies": {
-    "brew": "^0.0.8"
+    "brew": "^0.0.8",
+    "readline-sync": "^1.4.10"
   }
 }
