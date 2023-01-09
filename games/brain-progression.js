@@ -22,7 +22,7 @@ const progression = () => {
             lastNumber += commonDifference;
         }
 
-        console.log(`Question: ${arr}`);
+        console.log(`Question: ${arr.join(' ')}`);
         const userAnswer = readlineSync.question('Your answer ');
 
         if (userAnswer === commonDifference.toString()) {
