@@ -25,7 +25,7 @@ const progression = () => {
         console.log(`Question: ${arr.join(' ')}`);
         const userAnswer = readlineSync.question('Your answer ');
 
-        if (userAnswer === commonDifference) {
+        if (userAnswer.toString() === commonDifference.toString()) {
             console.log('Correct!');
         } else {
             console.log(`${userAnswer} is wrong answer; (.Correct answer was '${commonDifference}'.\nLet's try again, ${name}!`);
