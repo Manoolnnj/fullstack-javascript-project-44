@@ -33,10 +33,10 @@ export const evenGame = () => {
             console.log('Correct!');
         } else {
             if (isEven(number)) {
-                console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'\nLet's try again, ${name}`)
+                console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'\nLet's try again, ${name}!`)
                 return;
             } else {
-                console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'\nLet's try again, ${name}`)
+                console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'\nLet's try again, ${name}!`)
                 return;
             }
         }
