@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { randomInteger } from '../src/index.js';
-import { readlineSync } from 'readline-sync';
+import readlineSync from 'readline-sync';
 import { greetings } from '../src/cli.js';
 import { question } from '../src/cli.js';
 
