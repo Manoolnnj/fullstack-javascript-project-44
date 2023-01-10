@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 
-import { randomInteger } from '../src/index.js';
 import readlineSync from 'readline-sync';
-import { greetings } from '../src/cli.js';
-import { question } from '../src/cli.js';
+import { randomInteger } from '../src/index.js';
+import { greetings, question } from '../src/cli.js';
 
 greetings();
 const name = question();
 
 const progression = () => {
-    console.log('What number is missing in the progression ?')
+    console.log('What number is missing in the progression ?');
 
     for (let i = 0; i < 3; i += 1) {
         const initialTerm = randomInteger(1, 20);
@@ -18,8 +17,8 @@ const progression = () => {
         let lastNumber = initialTerm;
         const hiddenIndex = randomInteger(0, 9);
 
-        for (let i = 0; i < 9; i += 1) {
-            arr.push(lastNumber + commonDifference)
+        for (let j = 0; j < 9; j += 1) {
+            arr.push(lastNumber + commonDifference);
             lastNumber += commonDifference;
         }
         const arrClone = arr.slice(0);
@@ -34,7 +33,7 @@ const progression = () => {
             return;
         }
     }
-    console.log(`Congratulations, ${name}!`)
-}
+    console.log(`Congratulations, ${name}!`);
+};
 
 progression();

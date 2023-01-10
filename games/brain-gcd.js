@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 
-import { randomInteger } from '../src/index.js';
 import readlineSync from 'readline-sync';
-import { greetings } from '../src/cli.js';
-import { question } from '../src/cli.js';
-import { gcdFinder } from '../src/index.js';
+import { randomInteger, gcdFinder } from '../src/index.js';
+import { greetings, question } from '../src/cli.js';
 
 greetings();
 const name = question();
-
 
 const gcd = () => {
     console.log('Find the greatest common divisor of given numbers.');
@@ -21,18 +18,12 @@ const gcd = () => {
 
         if (userAnswer === gcdFinder(firstNumber, secondNumber).toString()) {
             console.log('Correct!');
-        }
-        else {
+        } else {
             console.log(`${userAnswer} is wrong answer; (.Correct answer was ${gcdFinder(firstNumber, secondNumber)}.\nLet's try again, ${name}!`);
             return;
         }
     }
-    console.log(`Congratulations, ${name}!`)
-}
+    console.log(`Congratulations, ${name}!`);
+};
 
 gcd();
-
-
-
-
-
