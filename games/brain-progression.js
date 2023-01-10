@@ -16,19 +16,21 @@ const progression = () => {
         const commonDifference = randomInteger(1, 7);
         const arr = [initialTerm];
         let lastNumber = initialTerm;
+        const hiddenIndex = randomInteger(0, 9);
 
         for (let i = 0; i < 9; i += 1) {
             arr.push(lastNumber + commonDifference)
             lastNumber += commonDifference;
         }
-
-        console.log(`Question: ${arr.join(' ')}`);
+        const arrClone = arr.slice(0);
+        arrClone[hiddenIndex] = '..';
+        console.log(`Question: ${arrClone.join(' ')}`);
         const userAnswer = readlineSync.question('Your answer ');
 
-        if (userAnswer.toString() === commonDifference.toString()) {
+        if (userAnswer.toString() === arr[hiddenIndex].toString()) {
             console.log('Correct!');
         } else {
-            console.log(`${userAnswer} is wrong answer; (.Correct answer was '${commonDifference}'.\nLet's try again, ${name}!`);
+            console.log(`${userAnswer} is wrong answer; (.Correct answer was '${arr[hiddenIndex]}'.\nLet's try again, ${name}!`);
             return;
         }
     }
