@@ -24,10 +24,10 @@ const brainPrime = () => {
             console.log('Correct!');
         } else {
             if (isPrime(number)) {
-                console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'yes'\nLet's try again, ${name}`)
+                console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'yes'\nLet's try again, ${name}!`)
                 return;
             } else {
-                console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'no'\nLet's try again, ${name}`)
+                console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'no'\nLet's try again, ${name}!`)
                 return;
             }
         }
