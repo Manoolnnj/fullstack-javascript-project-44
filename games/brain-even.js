@@ -10,12 +10,10 @@ const name = question();
 const isEven = (number) => {
   if (number % 2 === 0) {
     return true;
-  } else {
-    return false;
   }
 };
 
-export const evenGame = () => {
+const evenGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
@@ -42,3 +40,4 @@ export const evenGame = () => {
 };
 
 evenGame();
+export default evenGame;
