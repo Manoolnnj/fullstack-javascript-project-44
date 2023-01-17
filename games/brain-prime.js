@@ -17,7 +17,7 @@ const brainPrime = () => {
 
     if ((isPrime(number)) && (userAnswer === 'yes')) {
       console.log('Correct!');
-      }
+    }
     else if ((!(isPrime(number))) && (userAnswer === 'no')) {
       console.log('Correct!');
     } else {
@@ -27,7 +27,7 @@ const brainPrime = () => {
       } else {
         console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'no'\nLet's try again, ${name}!`);
         return;
-       }
+      }
     }
   }
   console.log(`Congratulations, ${name}!`);

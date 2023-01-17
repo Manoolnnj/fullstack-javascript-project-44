@@ -29,6 +29,7 @@ const calcGame = () => {
       case '*':
         result = firstNumber * secondNumber;
         break;
+      default:
     }
 
     if (userAnswer === result.toString()) {
