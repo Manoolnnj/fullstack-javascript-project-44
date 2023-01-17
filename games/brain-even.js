@@ -19,26 +19,25 @@ const evenGame = () => {
   for (let i = 0; i < 3; i += 1) {
     const number = randomInteger(1, 100);
     console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer ');
+    const userAnswer = readlineSync.question('Your answer: ');
 
-    if ((isEven(number))) && ((userAnswer === 'yes')) {
+    if ((isEven(number)) && (userAnswer === 'yes')) {
       console.log('Correct!');
     }
     else if ((!(isEven(number))) && (userAnswer === 'no')) {
-  console.log('Correct!!');
-} else {
-  if (isEven(number)) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'\nLet's try again, ${name}!`);
-    return;
-  } else {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'\nLet's try again, ${name}!`);
-    return;
+      console.log('Correct!');
+    } else {
+      if (isEven(number)) {
+        console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'yes'\nLet's try again, ${name}!`);
+        return;
+      } else {
+        console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'no'\nLet's try again, ${name}!`);
+        return;
+      }
+    }
   }
-}
-  }
-}
-console.log(`Congratulations, ${name}!`);
-
+  console.log(`Congratulations, ${name}!`);
+};
 
 evenGame();
 export default evenGame;
