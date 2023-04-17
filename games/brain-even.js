@@ -1,18 +1,12 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
-import { randomInteger } from '../src/index.js';
-import { greetings, question } from '../src/cli.js';
+import { gameLogic, isEven } from '../src/index.js';
 
-greetings();
-const name = question();
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+gameLogic(task, isEven);
 
-const isEven = (number) => {
-  if (number % 2 === 0) {
-    return true;
-  }
-};
 
+/*
 const evenGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -40,4 +34,4 @@ const evenGame = () => {
 };
 
 evenGame();
-export default evenGame;
+export default evenGame;  */

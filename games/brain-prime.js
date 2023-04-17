@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
-import { randomInteger, isPrime } from '../src/index.js';
-import { greetings, question } from '../src/cli.js';
+import { gameLogic, isPrime } from '../src/index.js';
 
-greetings();
-const name = question();
+const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+gameLogic(task, isPrime);
 
+
+
+
+/*
 const brainPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
@@ -31,6 +33,6 @@ const brainPrime = () => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-};
+}; 
 
-brainPrime();
+brainPrime();*/
