@@ -7,46 +7,21 @@ export const randomInteger = (min, max) => {
 
 export const gcdFinder = (a, b) => b === 0 ? Math.abs(a) : gcdFinder(b, a % b);
 
-export const isEven = (number) => {
-  if (number % 2 === 0) {
-    return true;
-  }
-};
-
-export const isPrime = (number) => {
-  for (let i = 2; i < number; i += 1) {
-    if (number % i === 0) {
-      return false;
-    }
-  }
-  return true;
-};
-
-
-export const gameLogic = (task, type) => {
+export const gameLogic = (task, makeRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(task);
 
   for (let i = 0; i < 3; i += 1) {
-    const number = randomInteger(1, 100);
-    console.log(`Question: ${number}`);
+    const [question, correctAnswer] = makeRound();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if ((type(number)) && (userAnswer === 'yes')) {
-      console.log('Correct!');
-    }
-    else if ((!(type(number))) && (userAnswer === 'no')) {
-      console.log('Correct!');
-    } else {
-      if (type(number)) {
-        console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'yes'\nLet's try again, ${name}!`);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was "${correctAnswer}"\nLet's try again, ${name}!`);
         return;
-      } else {
-        console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'no'\nLet's try again, ${name}!`);
-        return;
-      }
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };

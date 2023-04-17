@@ -1,37 +1,20 @@
 #!/usr/bin/env node
 
-import { gameLogic, isEven } from '../src/index.js';
+import { gameLogic, randomInteger } from '../src/index.js';
 
-const task = 'Answer "yes" if the number is even, otherwise answer "no".';
-gameLogic(task, isEven);
-
-
-/*
-const evenGame = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  for (let i = 0; i < 3; i += 1) {
-    const number = randomInteger(1, 100);
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if ((isEven(number)) && (userAnswer === 'yes')) {
-      console.log('Correct!');
-    }
-    else if ((!(isEven(number))) && (userAnswer === 'no')) {
-      console.log('Correct!');
-    } else {
-      if (isEven(number)) {
-        console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'yes'\nLet's try again, ${name}!`);
-        return;
-      } else {
-        console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was 'no'\nLet's try again, ${name}!`);
-        return;
-      }
-    }
+const isEven = (number) => {
+  if (number % 2 === 0) {
+    return true;
   }
-  console.log(`Congratulations, ${name}!`);
 };
 
-evenGame();
-export default evenGame;  */
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const makeRound = () => {
+  const number = randomInteger(0, 100);
+  const question = number.toString();
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return [number, correctAnswer];
+};
+
+gameLogic(task, makeRound);
