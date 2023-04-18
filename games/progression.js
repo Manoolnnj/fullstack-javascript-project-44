@@ -23,4 +23,4 @@ const makeRound = () => {
 
 const task = 'What number is missing in the progression ?';
 
-gameLogic(task, makeRound);
+export default gameLogic(task, makeRound);

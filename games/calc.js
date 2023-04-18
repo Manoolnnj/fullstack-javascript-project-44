@@ -27,4 +27,4 @@ const makeRound = () => {
   return [question, correctAnswer];
 }
 
-gameLogic(task, makeRound);
+export default gameLogic(task, makeRound);
