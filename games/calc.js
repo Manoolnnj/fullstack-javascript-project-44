@@ -1,11 +1,10 @@
-
 import { gameLogic, randomInteger } from '../src/index.js';
 
 const task = 'What is the result of the expression?';
 
 const makeRound = () => {
-  const firstNumber = randomInteger(0,50);
-  const secondNumber = randomInteger(0,50);
+  const firstNumber = randomInteger(0, 50);
+  const secondNumber = randomInteger(0, 50);
   const mathSymbols = ['+', '-', '*'];
   const randomSymbol = mathSymbols[randomInteger(0, 2)];
   const question = `${firstNumber} ${randomSymbol} ${secondNumber}`;
@@ -24,7 +23,7 @@ const makeRound = () => {
   }
   const correctAnswer = result.toString();
   return [question, correctAnswer];
-}
+};
 
 export default () => {
   gameLogic(task, makeRound);

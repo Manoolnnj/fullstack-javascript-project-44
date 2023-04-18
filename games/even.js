@@ -1,4 +1,3 @@
-
 import { gameLogic, randomInteger } from '../src/index.js';
 
 const isEven = (number) => {
@@ -14,7 +13,7 @@ const makeRound = () => {
   const number = randomInteger(0, 100);
   const question = number.toString();
   const correctAnswer = isEven(number) ? 'yes' : 'no';
-  return [number, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {
