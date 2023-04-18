@@ -17,7 +17,7 @@ export const gameLogic = (task, makeRound) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ; (.Correct answer was "${correctAnswer}"\nLet's try again, ${name}!`);
-        return;
+      return;
     }
     console.log('Correct!');
   }

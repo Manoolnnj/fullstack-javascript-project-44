@@ -7,16 +7,16 @@ const makeRound = () => {
   let lastNumber = initialTerm;
   const hiddenIndex = randomInteger(0, 9);
 
-  for (let j = 0; j < 9; j += 1) {
-    arr.push(lastNumber + commonDifference);
-    lastNumber += commonDifference;
-    }
-    const arrClone = arr.slice(0);
-    arrClone[hiddenIndex] = '..';
-    const question = arrClone.join(' ');
-    const correctAnswer = arr[hiddenIndex].toString();
-    return [question, correctAnswer];
-  };
+for (let j = 0; j < 9; j += 1) {
+  arr.push(lastNumber + commonDifference);
+  lastNumber += commonDifference;
+  }
+  const arrClone = arr.slice(0);
+  arrClone[hiddenIndex] = '..';
+  const question = arrClone.join(' ');
+  const correctAnswer = arr[hiddenIndex].toString();
+  return [question, correctAnswer];
+};
 
 const task = 'What number is missing in the progression ?';
 

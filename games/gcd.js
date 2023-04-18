@@ -13,5 +13,5 @@ const makeRound = () => {
 const task = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-gameLogic(task, makeRound);
+  gameLogic(task, makeRound);
 };
