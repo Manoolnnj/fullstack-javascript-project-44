@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import { gameLogic, randomInteger } from '../src/index.js';
 
@@ -6,6 +5,7 @@ const isEven = (number) => {
   if (number % 2 === 0) {
     return true;
   }
+  return false;
 };
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -17,4 +17,6 @@ const makeRound = () => {
   return [number, correctAnswer];
 };
 
-export default gameLogic(task, makeRound);
+export default () => {
+  gameLogic(task, makeRound);
+};

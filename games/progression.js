@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import { gameLogic, randomInteger } from '../src/index.js';
 
@@ -23,4 +22,6 @@ const makeRound = () => {
 
 const task = 'What number is missing in the progression ?';
 
-export default gameLogic(task, makeRound);
+export default () => {
+  gameLogic(task, makeRound);
+};

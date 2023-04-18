@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import { gameLogic, randomInteger } from '../src/index.js';
 
@@ -14,4 +13,6 @@ const makeRound = () => {
 
 const task = 'Find the greatest common divisor of given numbers.';
 
-export default gameLogic(task, makeRound);
+export default () => {
+  gameLogic(task, makeRound);
+};

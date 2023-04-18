@@ -5,7 +5,7 @@ export const randomInteger = (min, max) => {
   return Math.floor(random);
 };
 
-export const gameLogic = (task, makeRound) => {
+export default (task, makeRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);

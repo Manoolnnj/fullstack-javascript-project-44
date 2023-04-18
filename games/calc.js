@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import { gameLogic, randomInteger } from '../src/index.js';
 
@@ -27,4 +26,6 @@ const makeRound = () => {
   return [question, correctAnswer];
 }
 
-export default gameLogic(task, makeRound);
+export default () => {
+  gameLogic(task, makeRound);
+};
