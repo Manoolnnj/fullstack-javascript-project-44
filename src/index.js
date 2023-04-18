@@ -5,8 +5,6 @@ export const randomInteger = (min, max) => {
   return Math.floor(random);
 };
 
-export const gcdFinder = (a, b) => b === 0 ? Math.abs(a) : gcdFinder(b, a % b);
-
 export const gameLogic = (task, makeRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
