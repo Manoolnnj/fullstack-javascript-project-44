@@ -1,4 +1,5 @@
 import { gameLogic, randomInteger } from '../src/index.js';
+import { randomInteger } from '../utils.js';
 
 const makeRound = () => {
   const initialTerm = randomInteger(1, 20);

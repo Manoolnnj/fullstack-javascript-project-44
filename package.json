@@ -10,8 +10,7 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "version": "1.0.0",
-  "description": "npm package",
-  "main": "index.js",
+  "description": "'Brain Games': This is a project consisting of five console games to train your brain.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -35,7 +34,6 @@
     "eslint-plugin-import": "^2.27.5"
   },
   "dependencies": {
-    "brew": "^0.0.8",
     "readline-sync": "^1.4.10"
   }
 }

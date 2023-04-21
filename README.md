@@ -32,6 +32,17 @@ brain-gcd
 ```
 brain-progression  
 ```
-
+### Brain-even
 [![asciicast](https://asciinema.org/a/OLZKgCgL1bfwCrjLerSGrmA2T.svg)](https://asciinema.org/a/OLZKgCgL1bfwCrjLerSGrmA2T)
 
+### Brain-calc
+[![asciicast](https://asciinema.org/a/SkYIIN2WkQ7Emf6w2BtnDBK8M.svg)](https://asciinema.org/a/SkYIIN2WkQ7Emf6w2BtnDBK8M)
+
+### Brain-prime
+[![asciicast](https://asciinema.org/a/JelFZNUQS33b80Hm64J6BwwSg.svg)](https://asciinema.org/a/JelFZNUQS33b80Hm64J6BwwSg)
+
+### Brain-progression
+[![asciicast](https://asciinema.org/a/gSwg6t3xrSopGcRGrBJstqPd3.svg)](https://asciinema.org/a/gSwg6t3xrSopGcRGrBJstqPd3)
+
+### Brain-gcd
+[![asciicast](https://asciinema.org/a/1n7YEoucMkXc0g3k8lJz80b9C.svg)](https://asciinema.org/a/1n7YEoucMkXc0g3k8lJz80b9C)

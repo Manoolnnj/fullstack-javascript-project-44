@@ -1,4 +1,5 @@
 import { gameLogic, randomInteger } from '../src/index.js';
+import { randomInteger } from '../utils.js';
 
 const isEven = (number) => {
   if (number % 2 === 0) {
