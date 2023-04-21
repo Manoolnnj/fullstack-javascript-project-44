@@ -1,4 +1,4 @@
-import { gameLogic, randomInteger } from '../index.js';
+import { gameLogic } from '../index.js';
 import { randomInteger } from '../utils.js';
 
 const task = 'What is the result of the expression?';
