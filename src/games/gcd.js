@@ -1,4 +1,4 @@
-import { gameLogic } from '../src/index.js';
+import { gameLogic } from '../index.js';
 import { randomInteger } from '../utils.js';
 
 const gcdFinder = (a, b) => (b === 0 ? Math.abs(a) : gcdFinder(b, a % b));
